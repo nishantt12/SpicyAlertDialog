@@ -18,23 +18,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 new SpicyAlertDialog(MainActivity.this, 1)
                         .setCustomImage(R.drawable.piggy_graphic)
-                        .setTitleText("my title")
-                        .setContentText("My content")
+                        .setTitleText("Hey kjaksas")
+                        .setContentText("ekr wekr wke")
                         .setCancelClickListener(new SpicyAlertDialog.OnSpicyClickListener() {
                             @Override
                             public void onClick(SpicyAlertDialog spicyAlertDialog) {
 
 
+                                spicyAlertDialog.cancel();
                             }
                         })
                         .setConfirmClickListener(new SpicyAlertDialog.OnSpicyClickListener() {
                             @Override
                             public void onClick(SpicyAlertDialog spicyAlertDialog) {
 
-
+                                spicyAlertDialog.cancel();
 
                             }
                         })

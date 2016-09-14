@@ -39,7 +39,13 @@ public class SpicyAlertDialog extends Dialog {
     private TextView mContentTextView;
     private String mTitleText;
     private String mContentText;
+
+    private String mCancelText;
+    private String mConfirmText;
+
     private boolean mShowContent;
+
+    private boolean mShowCancel;
 
     private Drawable mCustomImgDrawable;
     private CircleImageView mCustomImage;
@@ -133,9 +139,6 @@ public class SpicyAlertDialog extends Dialog {
         mDialogView = getWindow().getDecorView().findViewById(android.R.id.content);
         mTitleTextView = (TextView) findViewById(R.id.mainTitle);
         mContentTextView = (TextView) findViewById(R.id.mainContent);
-
-        mContentTextView.setText("kjjfkw");
-        mTitleTextView.setText("kjjfkw");
 
         mCustomImage = (CircleImageView) findViewById(R.id.customImage);
 
@@ -247,6 +250,45 @@ public class SpicyAlertDialog extends Dialog {
 
     public SpicyAlertDialog setConfirmClickListener(OnSpicyClickListener listener) {
         mConfirmClickListener = listener;
+        return this;
+    }
+
+    public String getCancelText () {
+        return mCancelText;
+    }
+
+    public SpicyAlertDialog setCancelText (String text) {
+        mCancelText = text;
+        if (mCancelButton != null && mCancelText != null) {
+            showCancelButton(true);
+            mCancelButton.setText(mCancelText);
+        }
+
+        return this;
+    }
+
+    public String getConfirmText () {
+        return mConfirmText;
+    }
+
+    public SpicyAlertDialog setConfirmText (String text) {
+        mConfirmText = text;
+        if (mConfirmButton != null && mConfirmText != null) {
+            mConfirmButton.setText(mConfirmText);
+        }
+
+        return this;
+    }
+
+    public boolean isShowCancelButton () {
+        return mShowCancel;
+    }
+
+    public SpicyAlertDialog showCancelButton (boolean isShow) {
+        mShowCancel = isShow;
+        if (mCancelButton != null) {
+            mCancelButton.setVisibility(mShowCancel ? View.VISIBLE : View.GONE);
+        }
         return this;
     }
 }
