@@ -6,7 +6,7 @@ The simplest way to use SpicyAlertDialog is to add the library as aar dependency
 
 **Maven**
 
-    ```xml
+```xml
    <dependency>
      <groupId>com.nishant.spicyalertdialog</groupId>
      <artifactId>spicyalertdialog</artifactId>
