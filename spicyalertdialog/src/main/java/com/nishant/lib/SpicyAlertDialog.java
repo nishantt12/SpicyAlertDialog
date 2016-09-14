@@ -2,7 +2,6 @@ package com.nishant.lib;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,35 +29,23 @@ public class SpicyAlertDialog extends Dialog {
     Context context;
 
     private View mDialogView;
-    private AnimationSet mModalInAnim;
+
     private AnimationSet mModalOutAnim;
     private Animation mOverlayOutAnim;
 
     private AnimationSet mErrorXInAnim;
-    private AnimationSet mSuccessLayoutAnimSet;
-    private Animation mSuccessBowAnim;
+
     private TextView mTitleTextView;
     private TextView mContentTextView;
     private String mTitleText;
     private String mContentText;
-    private boolean mShowCancel;
     private boolean mShowContent;
-    private String mCancelText;
-    private String mConfirmText;
-    private int mAlertType;
-    private FrameLayout mErrorFrame;
-    private FrameLayout mSuccessFrame;
-    private FrameLayout mProgressFrame;
 
-    private ImageView mErrorX;
-    private View mSuccessLeftMask;
-    private View mSuccessRightMask;
     private Drawable mCustomImgDrawable;
     private CircleImageView mCustomImage;
     private TextView mConfirmButton;
     private TextView mCancelButton;
 
-    private FrameLayout mWarningFrame;
     private OnSpicyClickListener mCancelClickListener;
     private OnSpicyClickListener mConfirmClickListener;
     private boolean mCloseFromCancel;
@@ -80,7 +67,6 @@ public class SpicyAlertDialog extends Dialog {
         setCancelable(true);
         setCanceledOnTouchOutside(false);
 
-        mAlertType = alertType;
         mErrorXInAnim = (AnimationSet) OptAnimationLoader.loadAnimation(getContext(), R.anim.error_x_in);
         // 2.3.x system don't support alpha-animation on layer-list drawable
         // remove it from animation set
@@ -96,9 +82,7 @@ public class SpicyAlertDialog extends Dialog {
                 childAnims.remove(idx);
             }
         }
-        mSuccessBowAnim = OptAnimationLoader.loadAnimation(getContext(), R.anim.success_bow_roate);
-        mSuccessLayoutAnimSet = (AnimationSet) OptAnimationLoader.loadAnimation(getContext(), R.anim.success_mask_layout);
-        mModalInAnim = (AnimationSet) OptAnimationLoader.loadAnimation(getContext(), R.anim.modal_in);
+
         mModalOutAnim = (AnimationSet) OptAnimationLoader.loadAnimation(getContext(), R.anim.modal_out);
         mModalOutAnim.setAnimationListener(new Animation.AnimationListener() {
             @Override
