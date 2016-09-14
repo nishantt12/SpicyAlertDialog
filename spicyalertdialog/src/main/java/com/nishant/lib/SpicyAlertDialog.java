@@ -67,9 +67,14 @@ public class SpicyAlertDialog extends Dialog {
         public void onClick(SpicyAlertDialog spicyAlertDialog);
     }
 
+    public SpicyAlertDialog(Context context) {
+        this(context, 1);
+    }
+
     public SpicyAlertDialog(Context context, int alertType) {
 
-        super(context);
+        super(context, R.style.alert_dialog);
+
         this.context = context;
 
         setCancelable(true);
@@ -138,8 +143,6 @@ public class SpicyAlertDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
-        this.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
         setContentView(R.layout.dialog);
 
@@ -251,5 +254,15 @@ public class SpicyAlertDialog extends Dialog {
 
     public SpicyAlertDialog setCustomImage(int resourceId) {
         return setCustomImage(getContext().getResources().getDrawable(resourceId));
+    }
+
+    public SpicyAlertDialog setCancelClickListener(OnSpicyClickListener listener) {
+        mCancelClickListener = listener;
+        return this;
+    }
+
+    public SpicyAlertDialog setConfirmClickListener(OnSpicyClickListener listener) {
+        mConfirmClickListener = listener;
+        return this;
     }
 }

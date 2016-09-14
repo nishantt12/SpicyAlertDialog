@@ -1,5 +1,6 @@
 package com.nishant.spicyalertdialog;
 
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,21 @@ public class MainActivity extends AppCompatActivity {
                         .setCustomImage(R.drawable.piggy_graphic)
                         .setTitleText("my title")
                         .setContentText("My content")
+                        .setCancelClickListener(new SpicyAlertDialog.OnSpicyClickListener() {
+                            @Override
+                            public void onClick(SpicyAlertDialog spicyAlertDialog) {
+
+
+                            }
+                        })
+                        .setConfirmClickListener(new SpicyAlertDialog.OnSpicyClickListener() {
+                            @Override
+                            public void onClick(SpicyAlertDialog spicyAlertDialog) {
+
+
+
+                            }
+                        })
                         .show();
 
             }
