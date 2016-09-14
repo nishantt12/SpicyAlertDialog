@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673eb6</color>
+    <color name="colorPrimaryDark">#57349a</color>
+    <color name="colorAccent">#fe5457</color>
+    <color name="half_black">#808080</color>
+    <color name="muffinColorPrimary">#673eb6</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="leads_back">#f0f5f8</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="colorGrayDark">#4c4c4c</color>
+    <color name="btnNextColor">#fe5457</color>
+    <color name="grey">#808080</color>
+    <color name="black_37">#A1A1A1</color>
+    <color name="black_54">#757575</color>
+    <color name="black_87">#212121</color>
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+    <color name="screen_back">#f4f3f6</color>
+</resources>

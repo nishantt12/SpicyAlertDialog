@@ -1,0 +1,16 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+.idea/*
+.idea/
+*/build/*
+*.iml
+/.app/class_files.txt
+/.app/manifest-merger-production-release-report.txt
+/.app/mapping.txt
+/.app/proguard-project.txt
+/.app/seeds.txt
+/.app/unused.txt
