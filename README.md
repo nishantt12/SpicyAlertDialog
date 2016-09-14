@@ -10,7 +10,7 @@ The simplest way to use SpicyAlertDialog is to add the library as aar dependency
    <dependency>
      <groupId>com.nishant.spicyalertdialog</groupId>
      <artifactId>spicyalertdialog</artifactId>
-     <version>1.0.3</version>
+     <version>1.0.4</version>
      <type>pom</type>
    </dependency>
 ```
@@ -19,7 +19,7 @@ The simplest way to use SpicyAlertDialog is to add the library as aar dependency
 
 
     dependencies {
-        compile 'com.nishant.spicyalertdialog:spicyalertdialog:1.0.3'
+        compile 'com.nishant.spicyalertdialog:spicyalertdialog:1.0.4'
     }
 
 ## Usage
