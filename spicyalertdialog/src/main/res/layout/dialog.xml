@@ -23,10 +23,10 @@
 
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/mainTitle"
                 style="@style/TextGrey"
                 android:layout_marginTop="45dp"
-                android:text="Hi" />
+                 />
 
             <View
                 android:layout_width="match_parent"
@@ -35,35 +35,44 @@
                 android:background="@android:color/darker_gray" />
 
             <TextView
-
-
-                android:id="@+id/content"
+                android:id="@+id/mainContent"
                 style="@style/Text"
                 android:layout_marginTop="@dimen/margin_20"
-                android:text="Hi" />
+                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_20"
+                android:clipToPadding="false"
                 android:orientation="horizontal">
 
-                <Button
+                <TextView
                     android:id="@+id/onCancel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_5"
                     android:layout_weight="1"
+                    android:padding="@dimen/margin_16"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_large"
+                    android:elevation="@dimen/margin_5"
+                    android:textAllCaps="true"
                     android:background="@android:color/white"
                     android:text="Cancel"
                     android:textColor="@color/colorAccent" />
 
-                <Button
+                <TextView
                     android:id="@+id/onOk"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_5"
                     android:layout_weight="1"
+
+                    android:padding="@dimen/margin_16"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_large"
                     android:background="@android:color/white"
                     android:text="OK"
                     android:textColor="@color/colorAccent" />
@@ -75,11 +84,11 @@
         </LinearLayout>
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/image"
+            android:id="@+id/customImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/piggy_graphic" />
+             />
 
     </FrameLayout>
 

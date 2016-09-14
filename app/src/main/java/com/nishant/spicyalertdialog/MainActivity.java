@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.nishant.lib.SpicyAlertDialog;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                 new SpicyAlertDialog(MainActivity.this, 1)
+                        .setCustomImage(R.drawable.piggy_graphic)
+                        .setTitleText("my title")
+                        .setContentText("My content")
                         .show();
 
             }
