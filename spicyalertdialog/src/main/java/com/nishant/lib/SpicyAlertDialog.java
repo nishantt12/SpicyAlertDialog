@@ -142,10 +142,6 @@ public class SpicyAlertDialog extends Dialog {
 
         mCustomImage = (CircleImageView) findViewById(R.id.customImage);
 
-        Log.e("create", "create");
-        setCustomImage(R.drawable.piggy_graphic);
-        Log.e("create", "create2");
-
         mConfirmButton = (TextView) findViewById(R.id.onOk);
         mCancelButton = (TextView) findViewById(R.id.onCancel);
 
@@ -177,6 +173,9 @@ public class SpicyAlertDialog extends Dialog {
 
         setTitleText(mTitleText);
         setContentText(mContentText);
+        setCancelText(mCancelText);
+        setConfirmText(mConfirmText);
+        setCustomImage(mCustomImgDrawable);
 
 
     }
