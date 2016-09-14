@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/nishantt12/SpicyAlertDialog'
     gitUrl = 'https://github.com/nishantt12/SpicyAlertDialog.git'
 
-    libraryVersion = '1.0.4'
+    libraryVersion = '1.0.5'
 
     developerId = 'nishantt12'
     developerName = 'Nishant Tanwar'
