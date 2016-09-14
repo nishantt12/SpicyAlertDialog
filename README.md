@@ -13,6 +13,7 @@ The simplest way to use SpicyAlertDialog is to add the library as aar dependency
      <version>1.0.3</version>
      <type>pom</type>
    </dependency>
+```
 
 **Gradle**
 
