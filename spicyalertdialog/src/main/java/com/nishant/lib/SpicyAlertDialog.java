@@ -44,6 +44,7 @@ public class SpicyAlertDialog extends Dialog {
     private String mConfirmText;
 
     private boolean mShowContent;
+    private boolean mShowCustomImage;
 
     private boolean mShowCancel;
 
@@ -220,6 +221,14 @@ public class SpicyAlertDialog extends Dialog {
         mShowContent = isShow;
         if (mContentTextView != null) {
             mContentTextView.setVisibility(mShowContent ? View.VISIBLE : View.GONE);
+        }
+        return this;
+    }
+
+    public SpicyAlertDialog showCustomImage(boolean isShow) {
+        mShowCustomImage = isShow;
+        if (mCustomImage != null) {
+            mCustomImage.setVisibility(mShowCustomImage ? View.VISIBLE : View.GONE);
         }
         return this;
     }
