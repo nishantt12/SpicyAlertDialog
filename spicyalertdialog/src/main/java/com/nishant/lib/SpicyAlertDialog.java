@@ -178,6 +178,9 @@ public class SpicyAlertDialog extends Dialog {
         setConfirmText(mConfirmText);
         setCustomImage(mCustomImgDrawable);
 
+        setupUi();
+
+
 
     }
 
@@ -295,8 +298,12 @@ public class SpicyAlertDialog extends Dialog {
     public SpicyAlertDialog showCancelButton (boolean isShow) {
         mShowCancel = isShow;
         if (mCancelButton != null) {
-            mCancelButton.setVisibility(mShowCancel ? View.VISIBLE : View.GONE);
+            setupUi();
         }
         return this;
+    }
+
+    private void setupUi() {
+        mCancelButton.setVisibility(mShowCancel ? View.VISIBLE : View.GONE);
     }
 }

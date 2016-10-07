@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
                         .setCustomImage(R.drawable.piggy_graphic)
                         .setTitleText("Hey kjaksas")
                         .setContentText("ekr wekr wke")
+                        .showCancelButton(false)
                         .setCancelClickListener(new SpicyAlertDialog.OnSpicyClickListener() {
                             @Override
                             public void onClick(SpicyAlertDialog spicyAlertDialog) {
