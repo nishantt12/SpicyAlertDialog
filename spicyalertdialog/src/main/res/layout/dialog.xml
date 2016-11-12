@@ -25,6 +25,8 @@
             <TextView
                 android:id="@+id/mainTitle"
                 style="@style/TextGrey"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_marginTop="45dp"
                  />
 
